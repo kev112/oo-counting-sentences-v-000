@@ -3,7 +3,10 @@ require 'pry'
 class String
 
   def sentence?
-    
+    if self.end_with?('.')
+      true
+      binding.pry
+    end
   end
 
   def question?
